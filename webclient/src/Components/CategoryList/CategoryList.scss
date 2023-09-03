@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.category-list{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  &__title{
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 70px;
+    padding-top: 40px;
+  }
+}
+.category-list-order{
+  .category-list-items{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 500px){
+    .category-list-items{
+      gap: 20px;
+    }
+}

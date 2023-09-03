@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ServerApi.Contexts.RestaurantDbContext">
+    <Position X="0.5" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAgEAAAAAAgAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Contexts\RestaurantDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServerApi.Controllers.AccountController">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAEAAAAABAAAAQAAgBABAAAEBAAAAAAAA=</HashCode>
+      <FileName>Controllers\AccountController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServerApi.Controllers.BaseApiController" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\BaseApiController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServerApi.Controllers.DiscountController">
+    <Position X="5.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAAAAAAAAAAAAEAAAAAAAEAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Controllers\DiscountController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServerApi.Controllers.MenuController">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEBAAAAAAAgAAAAABBAgAAAAAAAAAABAAAAAAgAAAA=</HashCode>
+      <FileName>Controllers\MenuController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServerApi.Controllers.OrderController">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYBBAAAAAQAAAAAEIEAAFAAAAEAAIBAAAgAAABAAAA=</HashCode>
+      <FileName>Controllers\OrderController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServerApi.Controllers.ReservationController">
+    <Position X="7.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAYBBAAAAAAAAAAAAAEAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\ReservationController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServerApi.DbModels.DiscountDishAndDrink">
+    <Position X="4.5" Y="6.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>FAACCAAAAAIAAAAAAIAAAgAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>DbModels\DiscountDishAndDrink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServerApi.DbModels.DishAndDrink">
+    <Position X="6.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAQAgAAAAAAgAAAQAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>DbModels\DishAndDrink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServerApi.DbModels.DishAndDrinkCategory">
+    <Position X="8" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DbModels\DishAndDrinkCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServerApi.DbModels.Order">
+    <Position X="10.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAADAAAAAQIAAAAAAAAAAAgAAAAAAQAAAAAAAAAAAIA=</HashCode>
+      <FileName>DbModels\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServerApi.DbModels.OrderDishAndDrink">
+    <Position X="8.5" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EAECAAAAAAIAAAAAAAAAAgQAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>DbModels\OrderDishAndDrink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServerApi.DbModels.User">
+    <Position X="6.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAg=</HashCode>
+      <FileName>DbModels\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServerApi.DbModels.UserReservation">
+    <Position X="2.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAIAAAAAAAgAAAgAAAAAAAABAAAAAAAAAIg=</HashCode>
+      <FileName>DbModels\UserReservation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServerApi.Services.AuthenticationConfigureService">
+    <Position X="9.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\AuthenticationConfigureService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServerApi.Services.DataBaseContextConfigureService">
+    <Position X="9.75" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\DataBaseContextConfigureService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServerApi.Services.SwaggerConfigureService">
+    <Position X="9.75" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SwaggerConfigureService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServerApi.Program">
+    <Position X="10.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAEADAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,70 @@
+﻿<Window x:Class="DevClient.Views.AddDiscountView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DevClient.Views"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:vms="clr-namespace:DevClient.ViewModels"
+        mc:Ignorable="d" 
+        Height="250"
+        Width="300"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Title="Акция">
+    <Window.DataContext>
+        <vms:AddDiscountVM/>
+    </Window.DataContext>
+
+    <Grid VerticalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal"
+                    Background="White"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Grid.Row="1"> 
+            <Button  Content="Добавить скидку"
+                     Margin="5,0,0,0"
+                     Command="{Binding AddDiscountCommand}"/>
+        </StackPanel>
+        <Grid Grid.Row="0" 
+              Margin="20,10,20,10">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="95"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            
+            <TextBlock Text="Дата начала"
+                       VerticalAlignment="Center"/>
+            <TextBlock Text="Дата окончания"
+                       VerticalAlignment="Center"
+                       Grid.Row="1"/>
+            <TextBlock Text="Процент скидки"
+                       VerticalAlignment="Center"
+                       Grid.Row="2"/>
+            
+            <DatePicker materialDesign:HintAssist.Hint="Дата начала"
+                        SelectedDate="{Binding DateStart, Mode=TwoWay}"
+                        Grid.Column="1"/>
+            <DatePicker Grid.Row="1"
+                        materialDesign:HintAssist.Hint="Дата окончания"
+                        SelectedDate="{Binding DateEnd, Mode=TwoWay}"
+                        Grid.Column="1"/>
+            <TextBox materialDesign:HintAssist.Hint="Процент скидки"
+                     Height="40"
+                     Grid.Row="2"
+                     Style="{StaticResource MaterialDesignTextBox}"
+                     Text="{Binding Discount}"
+                     Grid.Column="1"/>
+        </Grid>
+    </Grid>
+</Window>

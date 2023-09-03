@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DevClient.Views.AddDiscountView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\AddDiscountView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DevClient.Views.ChangeCategoryView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ChangeCategoryView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DevClient.Views.DiscountView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\DiscountView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DevClient.Views.DishAndDrinkView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\DishAndDrinkView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DevClient.Views.MainView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\MainView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DevClient.Views.OrderDishAndDrinksChangeView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\OrderDishAndDrinksChangeView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DevClient.Views.OrderView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\OrderView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DevClient.Views.ReservationView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ReservationView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DevClient.ViewModels.AddDiscountVM">
+    <Position X="6" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAABAAADgBAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>ViewModels\AddDiscountVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DevClient.ViewModels.ChangeCategoryVM">
+    <Position X="6" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAQAABgAAAACAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>ViewModels\ChangeCategoryVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DevClient.ViewModels.DiscountVM">
+    <Position X="4.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAABAAAAAAAAAAAAAAAAAAAAgAAABAAAA=</HashCode>
+      <FileName>ViewModels\DiscountVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DevClient.ViewModels.DishAndDrinkVM">
+    <Position X="8" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAADAAAAABIAAAAAAAEAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>ViewModels\DishAndDrinkVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DevClient.ViewModels.LogInVM">
+    <Position X="0.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAIBAQAAAAAAAAAAE=</HashCode>
+      <FileName>ViewModels\LogInVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DevClient.ViewModels.MainVM">
+    <Position X="0.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEQAAAABABAAAAEFABAAgAAAgAAEAAACgBAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MainVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DevClient.ViewModels.OrderDishAndDrinksChangeVM">
+    <Position X="12" Y="1.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAIADEAAAAAAIgAAEAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>ViewModels\OrderDishAndDrinksChangeVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DevClient.ViewModels.OrderVM">
+    <Position X="2.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAEAABAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>ViewModels\OrderVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DevClient.ViewModels.ReservationVM">
+    <Position X="10.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAABAAAAAAAAAAAAAAAAAgAAAAAABAAAA=</HashCode>
+      <FileName>ViewModels\ReservationVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DevClient.Models.DiscountModel">
+    <Position X="4.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAIAAAAABBAACAAAAAACAAAAAAAgABAAAAAAAAIA=</HashCode>
+      <FileName>Models\DiscountModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DevClient.Models.DishAndDrinkModel">
+    <Position X="8" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AgCCIAAAAABAAAAEAAAAAACAAAAAAAgAAEAAAAAAAAA=</HashCode>
+      <FileName>Models\DishAndDrinkModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DevClient.Models.OrderDishAndDrinksChangeModel">
+    <Position X="12" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAAAAAAAAAAAAAACIAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Models\OrderDishAndDrinksChangeModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DevClient.Models.OrderModel">
+    <Position X="2.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgACIAAAAAAAAAAARAABAACAAAAAAAgAAAAAgAAQAIE=</HashCode>
+      <FileName>Models\OrderModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DevClient.Models.ReservationModel">
+    <Position X="10.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADIAAAAAAgAAAABAAAAACAAAAAAAgAAAAQIAAAAIE=</HashCode>
+      <FileName>Models\ReservationModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DevClient.Services.ApiService">
+    <Position X="18.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACQAAEgAUBBAgAAAAQAIAJBEAUoAAABAhAA=</HashCode>
+      <FileName>Services\ApiService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DevClient.Views.LogInView" Collapsed="true">
+    <Position X="0.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\LogInView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DevClient.Views.StatisticsView" Collapsed="true">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\StatisticsView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DevClient.ViewModels.StatisticsVM">
+    <Position X="14.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAIAgAAABIAACAAAAAAAAAAAEAAAAAAAAACAAEAA=</HashCode>
+      <FileName>ViewModels\StatisticsVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DevClient.ViewModels.AddDishAndDrinkVM">
+    <Position X="16.5" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>CgIAIAABAAAAQAAEgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\AddDishAndDrinkVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DevClient.Views.AddDishAndDrinkView" Collapsed="true">
+    <Position X="16.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\AddDishAndDrinkView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DevClient.Views.ChequeView" Collapsed="true">
+    <Position X="14.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ChequeView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DevClient.ViewModels.ChequeVM">
+    <Position X="14.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAIABgAAAAAAAgAAAAAEAAAAAAAQAAAAAAAAAIAA=</HashCode>
+      <FileName>ViewModels\ChequeVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

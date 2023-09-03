@@ -1,0 +1,21 @@
+.section-header{
+	font-family: Source Sans Pro;
+	background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+	.container{
+		height: 450px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #fff;
+	}
+}
+@media (max-width: 550px){
+	.section-header{
+	.container{
+		height: 300px;
+	}
+}
+}

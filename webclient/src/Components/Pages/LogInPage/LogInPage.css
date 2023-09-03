@@ -1,0 +1,22 @@
+.block-center-log{
+	padding: 30px 20px;
+	border-radius: 15px;
+	min-width: 450px;
+	-webkit-box-shadow: 2px 2px 12px 7px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 2px 2px 12px 7px rgba(34, 60, 80, 0.2);
+	box-shadow: 2px 2px 12px 7px rgba(34, 60, 80, 0.2);
+	background-color: #FFF;
+}
+.back-grey{
+	background-color: #EDF7F6;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@media (max-width: 455px){
+.block-center-log{
+	min-width: 200px;
+	width: 280px;
+}
+}

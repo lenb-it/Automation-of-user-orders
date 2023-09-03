@@ -1,0 +1,75 @@
+﻿<Page x:Class="DevClient.Views.DiscountView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DevClient.Views"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:vms="clr-namespace:DevClient.ViewModels"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DiscountView">
+    <Page.DataContext>
+        <vms:DiscountVM/>
+    </Page.DataContext>
+
+    <Grid VerticalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal"
+                    Background="White"
+                    VerticalAlignment="Center">
+            <Button  Content="Сохранить изменения выбранных"
+                     Margin="5,0,0,0"
+                     Command="{Binding UpdateSelectedAsyncCommand}"/>
+            <Button  Content="Удалить выбранные"
+                     Margin="5,0,0,0"
+                     Command="{Binding DeleteSelectedAsyncCommand}"/>
+        </StackPanel>
+
+        <DataGrid CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  AutoGenerateColumns="False" 
+                  ItemsSource="{Binding Discounts}"
+                  VerticalContentAlignment="Center"
+                  SelectionMode="Extended"
+                  Grid.Row="1">
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Binding="{Binding IsSelected}"/>
+                <DataGridTextColumn Binding="{Binding DishAndDrinkName}"
+                                    IsReadOnly="True"
+                                    Header="Название блюда / напитка"/>
+                <DataGridTextColumn Binding="{Binding DiscountValue}"
+                                    Header="Процент скидки"/>
+                <DataGridTextColumn Binding="{Binding DiscountPrice}"
+                                    IsReadOnly="True"
+                                    Header="Цена на акции"/>
+                <DataGridTemplateColumn Header="Дата начала"
+                                        CanUserSort="True"
+                                        SortMemberPath="DateStart">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <DatePicker materialDesign:HintAssist.Hint="Дата начала"
+                                        Margin="0,-3,0,-3"
+                                        SelectedDate="{Binding DateStart, Mode=TwoWay}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Дата окончания"
+                                        CanUserSort="True"
+                                        SortMemberPath="DateEnd">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <DatePicker materialDesign:HintAssist.Hint="Дата начала"
+                                        Margin="0,-3,0,-3"
+                                        SelectedDate="{Binding DateEnd, Mode=TwoWay}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

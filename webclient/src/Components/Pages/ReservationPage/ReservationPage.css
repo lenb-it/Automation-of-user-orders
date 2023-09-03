@@ -1,0 +1,35 @@
+.form{
+  display: flex;
+  gap: 20px;
+}
+.form-group{
+  display: flex;
+  gap: 10px;
+}
+.icon{
+  width: 18px;
+}
+.section-reservation{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.reservation-submit{
+  display: flex;
+  flex-direction: column;
+}
+.section-reservation__title{
+    text-transform: uppercase;
+}
+@media (max-width: 550px){
+    .form{
+      flex-direction: column;
+    }
+    .reservation-submit{
+      text-align: center;
+      padding: 0 10px;
+      width: fit-content;
+    }
+}

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@font-face {
+  font-family: SFProText;
+  src: url("../../fonts/SFProText.otf");
+}
+p{
+  margin: 0;
+}
+.category-item{
+  position: relative;
+  width: 400px;
+  padding: 15px; 
+  font-family: SFProText;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid #fff;
+  .item-title{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    &__name{
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: Source Sans Pro;
+    }
+    &__price{
+      display: flex;
+      align-items: center;
+      min-width: 66px;
+      line-height: 25px;
+      font-weight: bold;
+    }
+    &__count{
+      display: flex;
+      align-items: center;
+      width: 15px;
+    }
+  }
+  .item-add{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    &__count{
+      text-align: center;
+      width: 70px;
+    }
+  }
+}
+.discount{
+  border: 2px solid #C59D5F;
+}
+.discount::after{
+  content: 'Акция';
+  position: absolute;
+  top: -27px;
+  left: -2px;
+  font-size: 14px;
+  padding: 3px 4px;
+  background-color: #C59D5F;
+  color: #fff;
+}
+.category-item-order{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  .item-title{
+    gap: 10px;
+  }
+}
+@media (max-width: 500px){
+  .category-item{
+    width: 315px;
+    padding: 10px; 
+    gap: 10px;
+    .item-title{
+      display: flex;
+      justify-content: space-between;
+      &__name{
+        font-size: 14px;
+      }
+      &__price{
+        font-size: 14px;
+        line-height: 21px;
+      }
+      &__count{
+        display: flex;
+        align-items: center;
+      }
+    }
+    .btn{
+      width: 30px;
+      padding: 3px 6px;
+    }
+    .item-add{
+      display: flex;
+      gap: 10px;
+      &__count{
+        text-align: center;
+        width: 75px;
+      }
+    }
+  }
+}

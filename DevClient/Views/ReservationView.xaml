@@ -1,0 +1,75 @@
+﻿<Page x:Class="DevClient.Views.ReservationView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DevClient.Views"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:vms="clr-namespace:DevClient.ViewModels"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ReservationView">
+    <Page.DataContext>
+        <vms:ReservationVM/>
+    </Page.DataContext>
+
+    <Grid VerticalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal"
+                    Background="White"
+                    VerticalAlignment="Center">
+            <Button  Content="Сохранить изменения выбранных"
+                     Margin="5,0,0,0"
+                     Command="{Binding UpdateSelectedAsyncCommand}"/>
+            <Button  Content="Удалить выбранные"
+                     Margin="5,0,0,0"
+                     Command="{Binding DeleteSelectedAsyncCommand}"/>
+        </StackPanel>
+
+        <DataGrid CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  AutoGenerateColumns="False" 
+                  ItemsSource="{Binding UserReservations}"
+                  SelectionMode="Extended"
+                  Grid.Row="1">
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Binding="{Binding IsSelected}"
+                                    Header=""/>
+                <DataGridTextColumn Binding="{Binding Email}" 
+                                    IsReadOnly="True"
+                                    Header="Email"/>
+                <DataGridTextColumn Binding="{Binding Name}" 
+                                    IsReadOnly="True"
+                                    Header="ФИО"/>
+                <DataGridTextColumn Binding="{Binding PhoneNumber}" 
+                                    IsReadOnly="True"
+                                    Header="Номер"/>
+                <DataGridTemplateColumn Header="Дата">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <DatePicker SelectedDate="{Binding Date, Mode=TwoWay}"
+                                        Margin="0,-3,0,-3"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Время">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <materialDesign:TimePicker
+                                SelectedTime="{Binding Time, Mode=TwoWay}"
+                                Margin="0,-3,0,-3"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Binding="{Binding CountPeople}"
+                                    Header="Количество"/>
+                <DataGridCheckBoxColumn Binding="{Binding IsConfirmed}"
+                                    Header="Подтверждено"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>
